@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1962CCEE-2FA2-4724-8A82-CC4EF8C3B7A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pokemon</RootNamespace>
+    <AssemblyName>Pokemon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.2\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.2.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.2.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.4.0\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZstdSharp, Version=0.8.0.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.0\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Promos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Promos.Designer.cs">
+      <DependentUpon>Promos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menú.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menú.Designer.cs">
+      <DependentUpon>Menú.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pokedex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pokedex.Designer.cs">
+      <DependentUpon>Pokedex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Genes Formidables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genes Formidables.Designer.cs">
+      <DependentUpon>Genes Formidables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Promos.resx">
+      <DependentUpon>Promos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menú.resx">
+      <DependentUpon>Menú.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pokedex.resx">
+      <DependentUpon>Pokedex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genes Formidables.resx">
+      <DependentUpon>Genes Formidables.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Rhapsody\GENES\KOR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Rhapsody\GENES\ALE\048.jpeg" />
+    <Content Include="Rhapsody\GENES\ALE\138.jpeg" />
+    <Content Include="Rhapsody\GENES\CHI\001.jpeg" />
+    <Content Include="Rhapsody\GENES\CHI\029.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\041.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\042.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\043.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\044.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\045.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\046.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\047.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\048.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\049.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\050.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\051.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\052.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\053.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\054.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\055.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\056.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\057.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\058.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\059.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\060.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\061.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\062.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\063.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\064.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\065.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\066.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\067.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\068.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\069.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\070.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\071.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\072.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\073.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\074.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\075.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\076.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\077.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\078.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\079.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\080.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\081.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\083.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\084.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\085.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\086.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\087.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\088.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\089.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\090.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\091.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\092.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\093.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\094.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\095.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\096.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\097.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\098.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\099.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\100.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\101.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\102.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\104.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\105.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\106.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\107.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\108.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\109.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\110.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\111.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\112.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\113.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\114.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\115.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\116.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\117.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\118.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\119.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\120.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\121.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\122.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\124.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\125.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\126.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\127.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\128.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\129.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\130.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\131.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\132.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\133.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\134.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\135.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\136.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\137.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\138.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\139.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\140.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\141.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\142.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\143.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\144.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\145.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\147.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\148.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\149.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\150.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\151.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\152.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\154.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\155.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\156.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\157.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\158.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\159.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\160.jpeg" />
+    <Content Include="Rhapsody\GENES\FRA\054.jpeg" />
+    <Content Include="Rhapsody\GENES\FRA\143.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\042.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\043.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\044.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\045.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\048.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\054.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\057.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\059.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\063.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\065.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\066.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\070.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\073.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\077.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\082.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\085.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\087.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\088.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\092.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\093.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\094.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\096.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\100.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\101.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\105.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\110.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\111.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\116.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\118.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\119.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\123.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\124.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\130.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\133.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\134.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\136.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\137.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\138.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\140.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\141.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\143.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\144.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\150.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\155.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\157.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\158.jpeg" />
+    <Content Include="Rhapsody\GENES\JAP\047.jpeg" />
+    <Content Include="Rhapsody\GENES\JAP\058.jpeg" />
+    <Content Include="Rhapsody\GENES\JAP\087.jpeg" />
+    <Content Include="Rhapsody\GENES\POR\025.jpeg" />
+    <Content Include="ICO\Genes.ico" />
+    <Content Include="ICO\Menu.ico" />
+    <Content Include="Rhapsody\GENES\ESP\001.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\002.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\003.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\004.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\005.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\006.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\007.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\008.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\009.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\010.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\011.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\012.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\013.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\014.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\015.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\016.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\017.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\018.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\019.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\020.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\021.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\022.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\023.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\024.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\025.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\026.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\027.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\028.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\029.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\030.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\031.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\032.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\033.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\034.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\035.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\036.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\037.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\038.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\039.jpeg" />
+    <Content Include="Rhapsody\GENES\ESP\040.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\006.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\011.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\014.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\015.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\017.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\018.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\019.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\021.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\026.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\027.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\028.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\029.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\031.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\033.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\037.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\038.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\039.jpeg" />
+    <Content Include="Rhapsody\GENES\ING\040.jpeg" />
+    <Content Include="Rhapsody\GENES\ITA\001.jpeg" />
+    <Content Include="Rhapsody\GENES\JAP\016.jpeg" />
+    <Content Include="Rhapsody\GENES\JAP\030.jpeg" />
+    <Content Include="Rhapsody\GENES\POR\017.jpeg" />
+    <Content Include="ICO\Pokemon.ico" />
+    <Content Include="ICO\Promos.ico" />
+    <Content Include="Rhapsody\GENES\POR\064.jpeg" />
+    <Content Include="Rhapsody\GENES\POR\160.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ALE\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ALE\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\CHI\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\CHI\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ESP\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ESP\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\FRA\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\FRA\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ING\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ING\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ITA\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\ITA\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\JAP\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\JAP\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\KOR\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\KOR\002.jpeg" />
+    <Content Include="Rhapsody\PROMOS\POR\001.jpeg" />
+    <Content Include="Rhapsody\PROMOS\POR\002.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
