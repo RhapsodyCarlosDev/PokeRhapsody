@@ -50,3 +50,8 @@ C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pok
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Menú.resources
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.GenesFormidables.resources
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Promos.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\bin\Debug\Pokemon.exe.manifest
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\bin\Debug\Pokemon.application
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.TrustInfo.xml
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.exe.manifest
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.application

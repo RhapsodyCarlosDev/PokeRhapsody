@@ -210,7 +210,7 @@ namespace Pokemon
                                               // Añadimos a la lista el índice y los datos del registro encontrado
                             registrosconmismonombre.Add($"Carta {index} : {reader2.GetString(1)} {reader2.GetString(2)}");
 
-                            if (contadorNombre == 1)
+                            if (contadorNombre != 0)
                             {
 
                                 // Aquí puedes rellenar los cuadros de texto si lo necesitas:
@@ -248,9 +248,14 @@ namespace Pokemon
                             else
                             {
                                 Limpiar();
-                                // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
-                                MessageBox.Show($"Se encontraron {contadorNombre} cartas: {nombre}\n\n{string.Join("\n", registrosconmismonombre)}");
                             }
+                        }
+
+                        if(contadorNombre > 1)
+                        {
+
+                            // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
+                            MessageBox.Show($"Se encontraron {contadorNombre} cartas: {nombre}\n\n{string.Join("\n", registrosconmismonombre)}");
                         }
                     }
 
