@@ -105,6 +105,7 @@ namespace Pokemon
                 else
                 {
                     MessageBox.Show("Ingrese un Usuario y Contraseña.");
+                    Limpiar();
                     txtUsuario.Focus();
                 }
             }
