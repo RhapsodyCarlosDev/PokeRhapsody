@@ -133,8 +133,8 @@ namespace Pokemon
             MySqlDataReader reader = null;
             MySqlDataReader reader2 = null;
 
-            string sql1 = "SELECT * FROM Promos WHERE Codigo LIKE '" + codigo + "'";
-            string sql2 = "SELECT * FROM Promos WHERE Nombre LIKE '" + nombre + "'";
+            string sql1 = "SELECT * FROM promos WHERE Codigo LIKE '" + codigo + "'";
+            string sql2 = "SELECT * FROM promos WHERE Nombre LIKE '" + nombre + "'";
 
             MySqlConnection conexioncodigo = Conexion.GetConexion();
             conexioncodigo.Open();
@@ -157,6 +157,7 @@ namespace Pokemon
                 // Solo entramos si alguna de las condiciones de código o nombre no está vacía
                 if (codigo != string.Empty || nombre != string.Empty)
                 {
+
                     // Verificamos si se encontraron registros en la consulta de código
                     if (reader.HasRows)
                     {
@@ -205,7 +206,7 @@ namespace Pokemon
                                               // Añadimos a la lista el índice y los datos del registro encontrado
                             registrosconmismonombre.Add($"Carta {index} : {reader2.GetString(1)} {reader2.GetString(2)}");
 
-                            if (contadorNombre == 1)
+                            if (contadorNombre != 0)
                             {
 
                                 // Aquí puedes rellenar los cuadros de texto si lo necesitas:
@@ -238,13 +239,13 @@ namespace Pokemon
                                 index++; // Incrementamos el índice para el siguiente registro
 
                             }
+                        }
 
-                            else
-                            {
-                                Limpiar();
-                                // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
-                                MessageBox.Show($"Se encontraron {contadorNombre} cartas: {nombre}\n\n{string.Join("\n", registrosconmismonombre)}");
-                            }
+                        if (contadorNombre > 1)
+                        {
+                            Limpiar();
+                            // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
+                            MessageBox.Show($"Se encontraron {contadorNombre} cartas: {nombre}\n\n{string.Join("\n", registrosconmismonombre)}");
                         }
                     }
 
@@ -298,12 +299,12 @@ namespace Pokemon
             int chino = int.Parse(txtChino.Text);
 
             string sql = "UPDATE promos SET Codigo = '" + codigo + "', Nombre = '" + nombre + "', Tipo = '" + tipo + "'," +
-                " PS = '" + ps + "', Habilidad = '" + habilidad + "', Ataque1 = '" + ataque1 + "', NEA1 = '" + nea1 + "'," +
-                " Ataque2 = '" + ataque2 + "', NEA2 = '" + nea2 + "', Ataque3 = '" + ataque3 + "', NEA3 = '" + nea3 + "'," +
-                " Retirada = '" + retirada + "', Debilidad = '" + debilidad + "', Rareza = '" + rareza + "', Fase = '" + fase + "'," +
-                "', ESP = '" + español + "', ING = '" + ingles + "', FRA = '" + frances + "', ALE = '" + aleman + "'," +
-                " ITA = '" + italiano + "', POR = '" + portugues + "', JAP = '" + japones + "', KOR = '" + koreano + "'," +
-                " CHI = '" + chino + "' WHERE id = '" + id + "'";
+                "PS = '" + ps + "', Habilidad = '" + habilidad + "', Ataque1 = '" + ataque1 + "', NEA1 = '" + nea1 + "'," +
+                "Ataque2 = '" + ataque2 + "', NEA2 = '" + nea2 + "', Ataque3 = '" + ataque3 + "', NEA3 = '" + nea3 + "'," +
+                "Retirada = '" + retirada + "', Debilidad = '" + debilidad + "', Rareza = '" + rareza + "', Fase = '" + fase + "'," +
+                "ESP = '" + español + "', ING = '" + ingles + "', FRA = '" + frances + "', ALE = '" + aleman + "'," +
+                "ITA = '" + italiano + "', POR = '" + portugues + "', JAP = '" + japones + "', KOR = '" + koreano + "'," +
+                "CHI = '" + chino + "' WHERE id = '" + id + "'";
 
             MySqlConnection conexion = Conexion.GetConexion();
             conexion.Open();

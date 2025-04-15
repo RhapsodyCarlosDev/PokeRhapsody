@@ -119,17 +119,9 @@ namespace Pokemon
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Estas seguro de salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-            if (r == DialogResult.Yes)
-            {
-                //this.Close();
-                Application.Exit();
-            }
-            else
-            {
-                cbxExpansion.Focus();
-            }
+            Usuarios usuarios = new Usuarios();
+            usuarios.Show();
+            this.Hide();
         }
     }
 }

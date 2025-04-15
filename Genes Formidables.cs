@@ -161,6 +161,7 @@ namespace Pokemon
                 // Solo entramos si alguna de las condiciones de código o nombre no está vacía
                 if (codigo != string.Empty || nombre != string.Empty)
                 {
+
                     // Verificamos si se encontraron registros en la consulta de código
                     if (reader.HasRows)
                     {
@@ -195,6 +196,7 @@ namespace Pokemon
                             txtKoreano.Text = reader.GetString(24);
                             txtChino.Text = reader.GetString(25);
                         }
+                                               
                     }
 
                     // Verificamos si se encontraron registros en la consulta de nombre
@@ -244,16 +246,11 @@ namespace Pokemon
                                 index++; // Incrementamos el índice para el siguiente registro
 
                             }
-
-                            else
-                            {
-                                Limpiar();
-                            }
                         }
 
                         if(contadorNombre > 1)
                         {
-
+                            Limpiar();
                             // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
                             MessageBox.Show($"Se encontraron {contadorNombre} cartas: {nombre}\n\n{string.Join("\n", registrosconmismonombre)}");
                         }
@@ -360,57 +357,35 @@ namespace Pokemon
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            string id = txtId.Text;
-            string codigo = txtCodigo.Text;
-            string nombre = txtNombre.Text;
+            string codigo = txtCodigo.Text;  // Código que puede eliminarse directamente
+            string nombre = txtNombre.Text;  // Nombre para el cual verificamos duplicados
 
-            // Creación de las consultas para eliminar por Código y Nombre
-            string sqlcodigo = "DELETE FROM genes_formidables WHERE Codigo = '" + codigo + "'";
-            string sqlnombre = "DELETE FROM genes_formidables WHERE Nombre = '" + nombre + "'";
-
+            // Conexión a la base de datos
             MySqlConnection conexion = Conexion.GetConexion();
             conexion.Open();
 
             try
             {
-                // Verificamos si al menos uno de los campos (Codigo o Nombre) no está vacío
-                if (!string.IsNullOrEmpty(codigo) || !string.IsNullOrEmpty(nombre))
+                // Si se proporciona el Código, eliminamos directamente ese registro
+                if (!string.IsNullOrEmpty(codigo))
                 {
-                    // Preguntamos al usuario si está seguro de eliminar los registros
-                    DialogResult eliminar = MessageBox.Show("¿Estás seguro de eliminar esta carta?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    // Preguntamos al usuario si está seguro de eliminar los registros con el Nombre especificado
+                    DialogResult eliminar = MessageBox.Show($"¿Estás seguro de eliminar la carta {codigo} {nombre}?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                     if (eliminar == DialogResult.Yes)
                     {
-                        // Eliminar registros basados en el Código (si se proporcionó)
-                        if (!string.IsNullOrEmpty(codigo))
-                        {
-                            MySqlCommand comandocodigo = new MySqlCommand(sqlcodigo, conexion);
-                            int registroseliminadoscodigo = comandocodigo.ExecuteNonQuery();
+                        string sqlEliminarCodigo = "DELETE FROM genes_formidables WHERE Codigo = @codigo";
+                        MySqlCommand comandoEliminarCodigo = new MySqlCommand(sqlEliminarCodigo, conexion);
+                        comandoEliminarCodigo.Parameters.AddWithValue("@codigo", codigo);
+                        int registrosEliminadosCodigo = comandoEliminarCodigo.ExecuteNonQuery();
 
-                            if (registroseliminadoscodigo > 0)
-                            {
-                                MessageBox.Show($"Se elimino la carta {codigo} {nombre}.");
-                            }
-                            else
-                            {
-                                MessageBox.Show($"No se pudo eliminar la carta {codigo} {nombre}.");
-                            }
+                        if (registrosEliminadosCodigo == 1)
+                        {
+                            MessageBox.Show($"Se eliminó la carta {codigo} {nombre}.");
                         }
-
-                        // Eliminar registros basados en el Nombre (si se proporcionó)
-                        if (!string.IsNullOrEmpty(nombre))
+                        else
                         {
-                            MySqlCommand comandonombre = new MySqlCommand(sqlnombre, conexion);
-                            int registroseliminadosnombre = comandonombre.ExecuteNonQuery();
-
-                            if (registroseliminadosnombre > 0)
-                            {
-                                MessageBox.Show($"Se elimino la carta {codigo} {nombre}.");
-                            }
-                            else
-                            {
-                                MessageBox.Show($"No se pudo eliminar la carta {codigo} {nombre}.");
-                            }
+                            MessageBox.Show($"No se pudo eliminar la carta {codigo} {nombre}.");
                         }
 
                         // Limpiar los campos después de la eliminación
@@ -418,7 +393,53 @@ namespace Pokemon
                     }
                     else
                     {
-                        txtCodigo.Focus(); // Si no se confirma la eliminación, se mantiene el enfoque en el campo de Código
+                        txtCodigo.Focus(); // Si no se confirma la eliminación, se mantiene el enfoque en el campo de Nombre
+                    }
+                
+                }
+                // Si solo se proporciona el Nombre, verificamos cuántos registros existen con ese nombre
+                else if (!string.IsNullOrEmpty(nombre))
+                {
+                    // Contamos cuántos registros existen con el mismo Nombre
+                    string sqlContarNombre = "SELECT COUNT(*) FROM genes_formidables WHERE Nombre = @nombre";
+                    MySqlCommand comandoContarNombre = new MySqlCommand(sqlContarNombre, conexion);
+                    comandoContarNombre.Parameters.AddWithValue("@nombre", nombre);
+                    int contadorNombre = Convert.ToInt32(comandoContarNombre.ExecuteScalar());
+
+                    // Si hay más de un registro con el mismo nombre, mostramos el mensaje
+                    if (contadorNombre > 1)
+                    {
+                        MessageBox.Show($"No se pudo eliminar la carta {nombre}. Existen {contadorNombre} cartas con el nombre de {nombre}." +
+                            $"\nFavor de ingresar el nombre y buscar para obtener el codigo de las cartas con ese nombre");
+                    }
+                    else
+                    {
+                        // Preguntamos al usuario si está seguro de eliminar los registros con el Nombre especificado
+                        DialogResult eliminar = MessageBox.Show($"¿Estás seguro de eliminar la carta {nombre}?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                        if (eliminar == DialogResult.Yes)
+                        {
+                            string sqlEliminarNombre = "DELETE FROM genes_formidables WHERE Nombre = @nombre";
+                            MySqlCommand comandoEliminarNombre = new MySqlCommand(sqlEliminarNombre, conexion);
+                            comandoEliminarNombre.Parameters.AddWithValue("@nombre", nombre);
+                            int registrosEliminadosNombre = comandoEliminarNombre.ExecuteNonQuery();
+
+                            if (registrosEliminadosNombre > 0)
+                            {
+                                MessageBox.Show($"Se eliminó la carta {codigo} {nombre}.");
+                            }
+                            else
+                            {
+                                MessageBox.Show($"No se pudo eliminar la carta {codigo} {nombre}.");
+                            }
+
+                            // Limpiar los campos después de la eliminación
+                            Limpiar();
+                        }
+                        else
+                        {
+                            txtNombre.Focus(); // Si no se confirma la eliminación, se mantiene el enfoque en el campo de Nombre
+                        }
                     }
                 }
                 else

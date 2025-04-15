@@ -1,4 +1,5 @@
 ﻿using MySqlConnector;
+using System;
 
 namespace Pokemon
 {
@@ -25,6 +26,11 @@ namespace Pokemon
             MySqlConnection conexion = new MySqlConnection(cadenaConexion);
             return conexion;
 
+        }
+
+        internal void Open()
+        {
+            throw new NotImplementedException();
         }
     }
 }
