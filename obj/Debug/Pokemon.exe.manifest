@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Pokemon.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Pokemon.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Menu.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -163,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pokemon.exe" size="638464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pokemon.exe" size="641968">
       <assemblyIdentity name="Pokemon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Jo5MHvKmUx8M+VuUAvAjj8Y8yHBOeiQNZl6xDNb/o+g=</dsig:DigestValue>
+        <dsig:DigestValue>mN4uWfTUVD5NRwsMC+mVnjPAF6vUzv5E0Yfsn8SkujA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -300,6 +300,15 @@
       <dsig:DigestValue>rbCdOp5bSPrjB3kJ2DJ8ExUij6QzwWK6VlKafjO9M54=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="ICO\Invisible.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R70vQSvOyK9wug+KNHq9b401+fDT/s9oSFXzbY64lWo=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="ICO\Menu.ico" size="67646">
     <hash>
       <dsig:Transforms>
@@ -325,6 +334,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>m1cbAlw8TKUXpXYM7RsX26sHBdx9UpvW2DXaO2cFX5k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ICO\Visible.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q1VxPTmhLKEKaPRTuUmCFTmTX5KoktLWzKRhyZ2fAjs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Menu.ico" size="67646">

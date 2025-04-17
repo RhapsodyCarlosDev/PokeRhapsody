@@ -51,7 +51,6 @@ namespace Pokemon
             }
         }
 
-        // Evento SelectedIndexChanged del ComboBox
         private void cbxExpansion_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)

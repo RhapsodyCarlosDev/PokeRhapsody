@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://github.com/RhapsodyCarlosDev/PokeRhapsody/</InstallUrl>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -53,7 +53,7 @@
     <ApplicationIcon>Menu.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -226,6 +226,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ICO\Iniciar Sesión.ico" />
+    <Content Include="ICO\Invisible.ico" />
+    <Content Include="ICO\Visible.ico" />
     <Content Include="Menu.ico" />
     <Content Include="Rhapsody\GENES\ALE\048.jpeg" />
     <Content Include="Rhapsody\GENES\ALE\138.jpeg" />

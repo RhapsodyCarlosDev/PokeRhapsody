@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokemon
@@ -12,6 +13,8 @@ namespace Pokemon
         public Usuarios()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
+            Mostrar.Image = Image.FromFile("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\ICO\\Visible.ico");
         }
 
         private void btnIngresar_Click(object sender, System.EventArgs e)
@@ -24,29 +27,44 @@ namespace Pokemon
                 try
                 {
                     conexion.Open();
+
                     string query = "SELECT * FROM usuarios WHERE Usuarios = @Usuarios AND Passwords = @Passwords";
                     using (MySqlCommand cmd = new MySqlCommand(query, conexion))
                     {
                         cmd.Parameters.AddWithValue("@Usuarios", usuario);
                         cmd.Parameters.AddWithValue("@Passwords", password);
 
-                        MySqlDataReader reader = cmd.ExecuteReader();
+                        bool loginCorrecto = false;
 
-                        if (reader.HasRows)
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
+                            loginCorrecto = reader.HasRows;
+                        }
+
+                        if (loginCorrecto)
+                        {
+                            string auditQuery = "INSERT INTO login_audit (username, password) VALUES (@username, @password)";
+                            using (MySqlCommand auditCmd = new MySqlCommand(auditQuery, conexion))
+                            {
+                                auditCmd.Parameters.AddWithValue("@username", usuario);
+                                auditCmd.Parameters.AddWithValue("@password", password);
+                                auditCmd.ExecuteNonQuery();
+                            }
+
                             Menú menu = new Menú();
                             menu.Show();
                             this.Hide();
-
-                        }
-                        else if(txtUsuario.Text == "")
-                        {
-                            Limpiar();
-                            MessageBox.Show("Ingresa un Usuario y Contraseña.");
-                            txtUsuario.Focus();
                         }
                         else
                         {
+                            string failedQuery = "INSERT INTO login_failed (username, password) VALUES (@username, @password)";
+                            using (MySqlCommand failedCmd = new MySqlCommand(failedQuery, conexion))
+                            {
+                                failedCmd.Parameters.AddWithValue("@username", usuario);
+                                failedCmd.Parameters.AddWithValue("@password", password);
+                                failedCmd.ExecuteNonQuery();
+                            }
+
                             Limpiar();
                             MessageBox.Show("Usuario o Contraseña Incorrecta.");
                             txtUsuario.Focus();
@@ -139,6 +157,18 @@ namespace Pokemon
             {
                 txtUsuario.Focus();
             }
+        }
+
+        private void Mostrar_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+            Mostrar.Image = Image.FromFile("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\ICO\\Invisible.ico");
+        }
+
+        private void Mostrar_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
+            Mostrar.Image = Image.FromFile("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\ICO\\Visible.ico");
         }
     }
 }
