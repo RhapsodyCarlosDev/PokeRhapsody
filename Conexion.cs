@@ -8,15 +8,15 @@ namespace Pokemon
         public static MySqlConnection GetConexion()
         {
 
-            string servidor = "localhost";
+            string servidor = "SERVIDOR";
 
-            string puerto = "3306";
+            string puerto = "PORT";
 
-            string usuario = "root";
+            string usuario = "USER ID";
 
-            string password = "110818";
+            string password = "PASSWORD";
 
-            string db = "PokeRhapsody";
+            string db = "DATABASE";
 
             string cadenaConexion = "server=" + servidor +
                                     "; port=" + puerto +
