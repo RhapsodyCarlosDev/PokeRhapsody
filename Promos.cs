@@ -56,7 +56,7 @@ namespace Pokemon
 
                     MySqlCommand checkCommand = new MySqlCommand(checkSql, conexion);
                     checkCommand.Parameters.AddWithValue("@Codigo", codigo);
-                    int count = Convert.ToInt32(checkCommand.ExecuteScalar()); // Ejecutamos la consulta y obtenemos el conteo
+                    int count = Convert.ToInt16(checkCommand.ExecuteScalar()); // Ejecutamos la consulta y obtenemos el conteo
 
                     if (count > 0) // Si el código ya existe
                     {

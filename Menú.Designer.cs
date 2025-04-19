@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnCartas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -109,12 +110,27 @@
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
             // 
+            // btnCartas
+            // 
+            this.btnCartas.BackColor = System.Drawing.Color.Gold;
+            this.btnCartas.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnCartas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCartas.Location = new System.Drawing.Point(12, 219);
+            this.btnCartas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCartas.Name = "btnCartas";
+            this.btnCartas.Size = new System.Drawing.Size(111, 51);
+            this.btnCartas.TabIndex = 36;
+            this.btnCartas.Text = "Total de Cartas";
+            this.btnCartas.UseVisualStyleBackColor = false;
+            this.btnCartas.Click += new System.EventHandler(this.btnCartas_Click);
+            // 
             // Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(619, 306);
+            this.Controls.Add(this.btnCartas);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -143,5 +159,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnCartas;
     }
 }

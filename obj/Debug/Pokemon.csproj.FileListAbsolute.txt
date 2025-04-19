@@ -56,3 +56,5 @@ C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pok
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.exe.manifest
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.application
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Usuarios.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Total.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.LaIslaSingular.resources

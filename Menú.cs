@@ -1,9 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
-using System.Runtime.CompilerServices;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Pokemon
 {
@@ -53,62 +51,33 @@ namespace Pokemon
 
         private void cbxExpansion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)
+            
             if (cbxExpansion.SelectedItem.ToString() == "Promos")
             {
-                // Crear e inicializar el formulario secundario
+
                 Promos Promos = new Promos();
-
-                // Mostrar Promos 
                 Promos.Show();
-
-                // Esconde Menu, hasta que se cierre Promos
                 this.Hide();
 
             }
-            // Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)
+            
             else if (cbxExpansion.SelectedItem.ToString() == "Genes Formidables")
-            {
-                // Crear e inicializar el formulario secundario
+            { 
+
                 GenesFormidables GenesFormidables = new GenesFormidables();
-
-                // Esconde Menu, asta que se cierre Genes
                 this.Hide();
-
-                // Mostrar Genes
                 GenesFormidables.Show();
 
             }
-            /* Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)
-        else if (cbxExpansion.SelectedItem.ToString() == "La Isla Singular")
-        {
-            // Crear e inicializar el formulario secundario
-            GenesFormidables genesFormidables = new GenesFormidables();
+            
+            else if (cbxExpansion.SelectedItem.ToString() == "La Isla Singular")
+            {
+                
+                LaIslaSingular laislasingular = new LaIslaSingular();
+                this.Hide();
+                laislasingular.Show();
 
-            // Mostrar el formulario
-            genesFormidables.Show();
-
-        }
-            // Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)
-        else if (cbxExpansion.SelectedItem.ToString() == "Pugna Espacio Temporal")
-        {
-            // Crear e inicializar el formulario secundario
-            GenesFormidables genesFormidables = new GenesFormidables();
-
-            // Mostrar el formulario
-            genesFormidables.Show();
-
-        }
-            // Comprobamos si se ha seleccionado una opción (puedes comprobar el valor de la selección)
-        else if (cbxExpansion.SelectedItem.ToString() == "Luz Triunfal")
-        {
-            // Crear e inicializar el formulario secundario
-            GenesFormidables genesFormidables = new GenesFormidables();
-
-            // Mostrar el formulario
-            genesFormidables.Show();
-
-        }*/
+            }
 
             else
             {
@@ -120,6 +89,13 @@ namespace Pokemon
         {
             Usuarios usuarios = new Usuarios();
             usuarios.Show();
+            this.Hide();
+        }
+
+        private void btnCartas_Click(object sender, EventArgs e)
+        {
+            Total total = new Total();
+            total.Show();
             this.Hide();
         }
     }

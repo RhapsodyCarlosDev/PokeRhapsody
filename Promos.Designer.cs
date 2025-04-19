@@ -613,7 +613,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.Registro);
             this.MaximizeBox = false;
             this.Name = "Promos";

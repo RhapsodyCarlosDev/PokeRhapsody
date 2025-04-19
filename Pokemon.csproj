@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://github.com/RhapsodyCarlosDev/PokeRhapsody/</InstallUrl>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -147,6 +147,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="La Isla Singular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="La Isla Singular.Designer.cs">
+      <DependentUpon>La Isla Singular.cs</DependentUpon>
+    </Compile>
     <Compile Include="Promos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,12 +180,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Total.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total.Designer.cs">
+      <DependentUpon>Total.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="La Isla Singular.resx">
+      <DependentUpon>La Isla Singular.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Promos.resx">
       <DependentUpon>Promos.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Genes Formidables.resx">
       <DependentUpon>Genes Formidables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Total.resx">
+      <DependentUpon>Total.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuarios.resx">
       <DependentUpon>Usuarios.cs</DependentUpon>
@@ -223,8 +241,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Rhapsody\GENES\KOR\" />
+    <Folder Include="Rhapsody\ISLA\ALE\" />
+    <Folder Include="Rhapsody\ISLA\CHI\" />
+    <Folder Include="Rhapsody\ISLA\ESP\" />
+    <Folder Include="Rhapsody\ISLA\FRA\" />
+    <Folder Include="Rhapsody\ISLA\ING\" />
+    <Folder Include="Rhapsody\ISLA\ITA\" />
+    <Folder Include="Rhapsody\ISLA\JAP\" />
+    <Folder Include="Rhapsody\ISLA\KOR\" />
+    <Folder Include="Rhapsody\ISLA\POR\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ICO\Cartas.ico" />
     <Content Include="ICO\Iniciar Sesión.ico" />
     <Content Include="ICO\Invisible.ico" />
     <Content Include="ICO\Visible.ico" />
