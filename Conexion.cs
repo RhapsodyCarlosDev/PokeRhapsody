@@ -7,7 +7,6 @@ namespace Pokemon
     {
         public static MySqlConnection GetConexion()
         {
-
             string servidor = "SERVER";
 
             string puerto = "PORT";
@@ -25,7 +24,6 @@ namespace Pokemon
                                     "; database=" + db;
             MySqlConnection conexion = new MySqlConnection(cadenaConexion);
             return conexion;
-
         }
 
         internal void Open()
