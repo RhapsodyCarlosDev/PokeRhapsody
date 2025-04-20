@@ -1,6 +1,6 @@
 ﻿namespace Pokemon
 {
-    partial class LaIslaSingular
+    partial class LuzTriunfal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaIslaSingular));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LuzTriunfal));
             this.Registro = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
@@ -172,11 +172,11 @@
             this.Registro.Controls.Add(this.label1);
             this.Registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Registro.ForeColor = System.Drawing.Color.Firebrick;
-            this.Registro.Location = new System.Drawing.Point(6, 5);
-            this.Registro.Margin = new System.Windows.Forms.Padding(2);
+            this.Registro.Location = new System.Drawing.Point(8, 6);
+            this.Registro.Margin = new System.Windows.Forms.Padding(0);
             this.Registro.Name = "Registro";
-            this.Registro.Padding = new System.Windows.Forms.Padding(2);
-            this.Registro.Size = new System.Drawing.Size(1099, 577);
+            this.Registro.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Registro.Size = new System.Drawing.Size(1465, 710);
             this.Registro.TabIndex = 2;
             this.Registro.TabStop = false;
             this.Registro.Text = "Pokemon";
@@ -186,10 +186,10 @@
             this.btnSalir.BackColor = System.Drawing.Color.Gold;
             this.btnSalir.ForeColor = System.Drawing.Color.Firebrick;
             this.btnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSalir.Location = new System.Drawing.Point(933, 509);
+            this.btnSalir.Location = new System.Drawing.Point(1244, 626);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(0);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(83, 42);
+            this.btnSalir.Size = new System.Drawing.Size(111, 52);
             this.btnSalir.TabIndex = 33;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -200,10 +200,10 @@
             this.btnMenu.BackColor = System.Drawing.Color.Gold;
             this.btnMenu.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMenu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnMenu.Location = new System.Drawing.Point(558, 509);
+            this.btnMenu.Location = new System.Drawing.Point(744, 626);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(0);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(281, 42);
+            this.btnMenu.Size = new System.Drawing.Size(375, 52);
             this.btnMenu.TabIndex = 32;
             this.btnMenu.Text = "Regresar al menu de expansiones";
             this.btnMenu.UseVisualStyleBackColor = false;
@@ -214,10 +214,10 @@
             this.btnCHI.BackColor = System.Drawing.Color.Gold;
             this.btnCHI.ForeColor = System.Drawing.Color.Firebrick;
             this.btnCHI.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCHI.Location = new System.Drawing.Point(691, 356);
+            this.btnCHI.Location = new System.Drawing.Point(921, 438);
             this.btnCHI.Margin = new System.Windows.Forms.Padding(0);
             this.btnCHI.Name = "btnCHI";
-            this.btnCHI.Size = new System.Drawing.Size(85, 24);
+            this.btnCHI.Size = new System.Drawing.Size(113, 30);
             this.btnCHI.TabIndex = 42;
             this.btnCHI.Text = "Ver Carta";
             this.btnCHI.UseVisualStyleBackColor = false;
@@ -228,10 +228,10 @@
             this.btnKOR.BackColor = System.Drawing.Color.Gold;
             this.btnKOR.ForeColor = System.Drawing.Color.Firebrick;
             this.btnKOR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnKOR.Location = new System.Drawing.Point(691, 318);
+            this.btnKOR.Location = new System.Drawing.Point(921, 391);
             this.btnKOR.Margin = new System.Windows.Forms.Padding(0);
             this.btnKOR.Name = "btnKOR";
-            this.btnKOR.Size = new System.Drawing.Size(85, 24);
+            this.btnKOR.Size = new System.Drawing.Size(113, 30);
             this.btnKOR.TabIndex = 41;
             this.btnKOR.Text = "Ver Carta";
             this.btnKOR.UseVisualStyleBackColor = false;
@@ -242,10 +242,10 @@
             this.btnJAP.BackColor = System.Drawing.Color.Gold;
             this.btnJAP.ForeColor = System.Drawing.Color.Firebrick;
             this.btnJAP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnJAP.Location = new System.Drawing.Point(691, 281);
+            this.btnJAP.Location = new System.Drawing.Point(921, 346);
             this.btnJAP.Margin = new System.Windows.Forms.Padding(0);
             this.btnJAP.Name = "btnJAP";
-            this.btnJAP.Size = new System.Drawing.Size(85, 24);
+            this.btnJAP.Size = new System.Drawing.Size(113, 30);
             this.btnJAP.TabIndex = 40;
             this.btnJAP.Text = "Ver Carta";
             this.btnJAP.UseVisualStyleBackColor = false;
@@ -256,10 +256,10 @@
             this.btnPOR.BackColor = System.Drawing.Color.Gold;
             this.btnPOR.ForeColor = System.Drawing.Color.Firebrick;
             this.btnPOR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnPOR.Location = new System.Drawing.Point(691, 243);
+            this.btnPOR.Location = new System.Drawing.Point(921, 299);
             this.btnPOR.Margin = new System.Windows.Forms.Padding(0);
             this.btnPOR.Name = "btnPOR";
-            this.btnPOR.Size = new System.Drawing.Size(85, 24);
+            this.btnPOR.Size = new System.Drawing.Size(113, 30);
             this.btnPOR.TabIndex = 39;
             this.btnPOR.Text = "Ver Carta";
             this.btnPOR.UseVisualStyleBackColor = false;
@@ -270,10 +270,10 @@
             this.btnITA.BackColor = System.Drawing.Color.Gold;
             this.btnITA.ForeColor = System.Drawing.Color.Firebrick;
             this.btnITA.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnITA.Location = new System.Drawing.Point(691, 205);
+            this.btnITA.Location = new System.Drawing.Point(921, 252);
             this.btnITA.Margin = new System.Windows.Forms.Padding(0);
             this.btnITA.Name = "btnITA";
-            this.btnITA.Size = new System.Drawing.Size(85, 24);
+            this.btnITA.Size = new System.Drawing.Size(113, 30);
             this.btnITA.TabIndex = 38;
             this.btnITA.Text = "Ver Carta";
             this.btnITA.UseVisualStyleBackColor = false;
@@ -284,10 +284,10 @@
             this.btnALE.BackColor = System.Drawing.Color.Gold;
             this.btnALE.ForeColor = System.Drawing.Color.Firebrick;
             this.btnALE.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnALE.Location = new System.Drawing.Point(691, 168);
+            this.btnALE.Location = new System.Drawing.Point(921, 207);
             this.btnALE.Margin = new System.Windows.Forms.Padding(0);
             this.btnALE.Name = "btnALE";
-            this.btnALE.Size = new System.Drawing.Size(85, 24);
+            this.btnALE.Size = new System.Drawing.Size(113, 30);
             this.btnALE.TabIndex = 37;
             this.btnALE.Text = "Ver Carta";
             this.btnALE.UseVisualStyleBackColor = false;
@@ -298,10 +298,10 @@
             this.btnFRA.BackColor = System.Drawing.Color.Gold;
             this.btnFRA.ForeColor = System.Drawing.Color.Firebrick;
             this.btnFRA.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnFRA.Location = new System.Drawing.Point(691, 133);
+            this.btnFRA.Location = new System.Drawing.Point(921, 164);
             this.btnFRA.Margin = new System.Windows.Forms.Padding(0);
             this.btnFRA.Name = "btnFRA";
-            this.btnFRA.Size = new System.Drawing.Size(85, 24);
+            this.btnFRA.Size = new System.Drawing.Size(113, 30);
             this.btnFRA.TabIndex = 36;
             this.btnFRA.Text = "Ver Carta";
             this.btnFRA.UseVisualStyleBackColor = false;
@@ -312,10 +312,10 @@
             this.btnING.BackColor = System.Drawing.Color.Gold;
             this.btnING.ForeColor = System.Drawing.Color.Firebrick;
             this.btnING.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnING.Location = new System.Drawing.Point(691, 98);
+            this.btnING.Location = new System.Drawing.Point(921, 121);
             this.btnING.Margin = new System.Windows.Forms.Padding(0);
             this.btnING.Name = "btnING";
-            this.btnING.Size = new System.Drawing.Size(85, 24);
+            this.btnING.Size = new System.Drawing.Size(113, 30);
             this.btnING.TabIndex = 35;
             this.btnING.Text = "Ver Carta";
             this.btnING.UseVisualStyleBackColor = false;
@@ -326,10 +326,10 @@
             this.btnESP.BackColor = System.Drawing.Color.Gold;
             this.btnESP.ForeColor = System.Drawing.Color.Firebrick;
             this.btnESP.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnESP.Location = new System.Drawing.Point(691, 61);
+            this.btnESP.Location = new System.Drawing.Point(921, 75);
             this.btnESP.Margin = new System.Windows.Forms.Padding(0);
             this.btnESP.Name = "btnESP";
-            this.btnESP.Size = new System.Drawing.Size(85, 24);
+            this.btnESP.Size = new System.Drawing.Size(113, 30);
             this.btnESP.TabIndex = 34;
             this.btnESP.Text = "Ver Carta";
             this.btnESP.UseVisualStyleBackColor = false;
@@ -340,10 +340,10 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.Gold;
             this.btnLimpiar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnLimpiar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLimpiar.Location = new System.Drawing.Point(986, 448);
+            this.btnLimpiar.Location = new System.Drawing.Point(1315, 551);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(0);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(83, 42);
+            this.btnLimpiar.Size = new System.Drawing.Size(111, 52);
             this.btnLimpiar.TabIndex = 31;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -354,10 +354,10 @@
             this.btnEliminar.BackColor = System.Drawing.Color.Gold;
             this.btnEliminar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnEliminar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEliminar.Location = new System.Drawing.Point(878, 448);
+            this.btnEliminar.Location = new System.Drawing.Point(1171, 551);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(0);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(83, 42);
+            this.btnEliminar.Size = new System.Drawing.Size(111, 52);
             this.btnEliminar.TabIndex = 30;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -366,11 +366,11 @@
             // txtId
             // 
             this.txtId.BackColor = System.Drawing.Color.Firebrick;
-            this.txtId.Location = new System.Drawing.Point(801, 394);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2);
+            this.txtId.Location = new System.Drawing.Point(1068, 485);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(270, 25);
+            this.txtId.Size = new System.Drawing.Size(359, 30);
             this.txtId.TabIndex = 26;
             this.txtId.Visible = false;
             // 
@@ -379,10 +379,10 @@
             this.btnModificar.BackColor = System.Drawing.Color.Gold;
             this.btnModificar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnModificar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnModificar.Location = new System.Drawing.Point(768, 448);
+            this.btnModificar.Location = new System.Drawing.Point(1024, 551);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(0);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(83, 42);
+            this.btnModificar.Size = new System.Drawing.Size(111, 52);
             this.btnModificar.TabIndex = 29;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -393,10 +393,10 @@
             this.btnBuscar.BackColor = System.Drawing.Color.Gold;
             this.btnBuscar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnBuscar.Location = new System.Drawing.Point(659, 448);
+            this.btnBuscar.Location = new System.Drawing.Point(879, 551);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(0);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(83, 42);
+            this.btnBuscar.Size = new System.Drawing.Size(111, 52);
             this.btnBuscar.TabIndex = 28;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -407,10 +407,10 @@
             this.btnGuardar.BackColor = System.Drawing.Color.Gold;
             this.btnGuardar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnGuardar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnGuardar.Location = new System.Drawing.Point(550, 448);
+            this.btnGuardar.Location = new System.Drawing.Point(733, 551);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(0);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(83, 42);
+            this.btnGuardar.Size = new System.Drawing.Size(111, 52);
             this.btnGuardar.TabIndex = 27;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -419,251 +419,251 @@
             // txtChino
             // 
             this.txtChino.BackColor = System.Drawing.Color.Firebrick;
-            this.txtChino.Location = new System.Drawing.Point(801, 356);
-            this.txtChino.Margin = new System.Windows.Forms.Padding(2);
+            this.txtChino.Location = new System.Drawing.Point(1068, 438);
+            this.txtChino.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChino.Multiline = true;
             this.txtChino.Name = "txtChino";
-            this.txtChino.Size = new System.Drawing.Size(270, 25);
+            this.txtChino.Size = new System.Drawing.Size(359, 30);
             this.txtChino.TabIndex = 25;
             // 
             // txtKoreano
             // 
             this.txtKoreano.BackColor = System.Drawing.Color.Firebrick;
-            this.txtKoreano.Location = new System.Drawing.Point(801, 318);
-            this.txtKoreano.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKoreano.Location = new System.Drawing.Point(1068, 391);
+            this.txtKoreano.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKoreano.Multiline = true;
             this.txtKoreano.Name = "txtKoreano";
-            this.txtKoreano.Size = new System.Drawing.Size(270, 25);
+            this.txtKoreano.Size = new System.Drawing.Size(359, 30);
             this.txtKoreano.TabIndex = 24;
             // 
             // txtJapones
             // 
             this.txtJapones.BackColor = System.Drawing.Color.Firebrick;
-            this.txtJapones.Location = new System.Drawing.Point(801, 281);
-            this.txtJapones.Margin = new System.Windows.Forms.Padding(2);
+            this.txtJapones.Location = new System.Drawing.Point(1068, 346);
+            this.txtJapones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtJapones.Multiline = true;
             this.txtJapones.Name = "txtJapones";
-            this.txtJapones.Size = new System.Drawing.Size(270, 25);
+            this.txtJapones.Size = new System.Drawing.Size(359, 30);
             this.txtJapones.TabIndex = 23;
             // 
             // txtPortugues
             // 
             this.txtPortugues.BackColor = System.Drawing.Color.Firebrick;
-            this.txtPortugues.Location = new System.Drawing.Point(801, 243);
-            this.txtPortugues.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPortugues.Location = new System.Drawing.Point(1068, 299);
+            this.txtPortugues.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPortugues.Multiline = true;
             this.txtPortugues.Name = "txtPortugues";
-            this.txtPortugues.Size = new System.Drawing.Size(270, 25);
+            this.txtPortugues.Size = new System.Drawing.Size(359, 30);
             this.txtPortugues.TabIndex = 22;
             // 
             // txtItaliano
             // 
             this.txtItaliano.BackColor = System.Drawing.Color.Firebrick;
-            this.txtItaliano.Location = new System.Drawing.Point(801, 205);
-            this.txtItaliano.Margin = new System.Windows.Forms.Padding(2);
+            this.txtItaliano.Location = new System.Drawing.Point(1068, 252);
+            this.txtItaliano.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtItaliano.Multiline = true;
             this.txtItaliano.Name = "txtItaliano";
-            this.txtItaliano.Size = new System.Drawing.Size(270, 25);
+            this.txtItaliano.Size = new System.Drawing.Size(359, 30);
             this.txtItaliano.TabIndex = 21;
             // 
             // txtAleman
             // 
             this.txtAleman.BackColor = System.Drawing.Color.Firebrick;
-            this.txtAleman.Location = new System.Drawing.Point(801, 168);
-            this.txtAleman.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAleman.Location = new System.Drawing.Point(1068, 207);
+            this.txtAleman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAleman.Multiline = true;
             this.txtAleman.Name = "txtAleman";
-            this.txtAleman.Size = new System.Drawing.Size(270, 25);
+            this.txtAleman.Size = new System.Drawing.Size(359, 30);
             this.txtAleman.TabIndex = 20;
             // 
             // txtFrances
             // 
             this.txtFrances.BackColor = System.Drawing.Color.Firebrick;
-            this.txtFrances.Location = new System.Drawing.Point(801, 133);
-            this.txtFrances.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFrances.Location = new System.Drawing.Point(1068, 164);
+            this.txtFrances.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFrances.Multiline = true;
             this.txtFrances.Name = "txtFrances";
-            this.txtFrances.Size = new System.Drawing.Size(270, 25);
+            this.txtFrances.Size = new System.Drawing.Size(359, 30);
             this.txtFrances.TabIndex = 19;
             // 
             // txtIngles
             // 
             this.txtIngles.BackColor = System.Drawing.Color.Firebrick;
-            this.txtIngles.Location = new System.Drawing.Point(801, 99);
-            this.txtIngles.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIngles.Location = new System.Drawing.Point(1068, 122);
+            this.txtIngles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIngles.Multiline = true;
             this.txtIngles.Name = "txtIngles";
-            this.txtIngles.Size = new System.Drawing.Size(270, 25);
+            this.txtIngles.Size = new System.Drawing.Size(359, 30);
             this.txtIngles.TabIndex = 18;
             // 
             // txtEspañol
             // 
             this.txtEspañol.BackColor = System.Drawing.Color.Firebrick;
-            this.txtEspañol.Location = new System.Drawing.Point(801, 61);
-            this.txtEspañol.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEspañol.Location = new System.Drawing.Point(1068, 75);
+            this.txtEspañol.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEspañol.Multiline = true;
             this.txtEspañol.Name = "txtEspañol";
-            this.txtEspañol.Size = new System.Drawing.Size(270, 25);
+            this.txtEspañol.Size = new System.Drawing.Size(359, 30);
             this.txtEspañol.TabIndex = 17;
             // 
             // txtNSDE
             // 
             this.txtNSDE.BackColor = System.Drawing.Color.Firebrick;
-            this.txtNSDE.Location = new System.Drawing.Point(801, 23);
-            this.txtNSDE.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNSDE.Location = new System.Drawing.Point(1068, 28);
+            this.txtNSDE.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNSDE.Multiline = true;
             this.txtNSDE.Name = "txtNSDE";
-            this.txtNSDE.Size = new System.Drawing.Size(270, 25);
+            this.txtNSDE.Size = new System.Drawing.Size(359, 30);
             this.txtNSDE.TabIndex = 16;
             // 
             // txtFase
             // 
             this.txtFase.BackColor = System.Drawing.Color.Firebrick;
-            this.txtFase.Location = new System.Drawing.Point(233, 540);
-            this.txtFase.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFase.Location = new System.Drawing.Point(311, 665);
+            this.txtFase.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFase.Multiline = true;
             this.txtFase.Name = "txtFase";
-            this.txtFase.Size = new System.Drawing.Size(270, 25);
+            this.txtFase.Size = new System.Drawing.Size(359, 30);
             this.txtFase.TabIndex = 15;
             // 
             // txtRareza
             // 
             this.txtRareza.BackColor = System.Drawing.Color.Firebrick;
-            this.txtRareza.Location = new System.Drawing.Point(233, 504);
-            this.txtRareza.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRareza.Location = new System.Drawing.Point(311, 620);
+            this.txtRareza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRareza.Multiline = true;
             this.txtRareza.Name = "txtRareza";
-            this.txtRareza.Size = new System.Drawing.Size(270, 25);
+            this.txtRareza.Size = new System.Drawing.Size(359, 30);
             this.txtRareza.TabIndex = 14;
             // 
             // txtDebilidad
             // 
             this.txtDebilidad.BackColor = System.Drawing.Color.Firebrick;
-            this.txtDebilidad.Location = new System.Drawing.Point(233, 466);
-            this.txtDebilidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDebilidad.Location = new System.Drawing.Point(311, 574);
+            this.txtDebilidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDebilidad.Multiline = true;
             this.txtDebilidad.Name = "txtDebilidad";
-            this.txtDebilidad.Size = new System.Drawing.Size(270, 25);
+            this.txtDebilidad.Size = new System.Drawing.Size(359, 30);
             this.txtDebilidad.TabIndex = 13;
             // 
             // txtRetirada
             // 
             this.txtRetirada.BackColor = System.Drawing.Color.Firebrick;
-            this.txtRetirada.Location = new System.Drawing.Point(233, 428);
-            this.txtRetirada.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRetirada.Location = new System.Drawing.Point(311, 527);
+            this.txtRetirada.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRetirada.Multiline = true;
             this.txtRetirada.Name = "txtRetirada";
-            this.txtRetirada.Size = new System.Drawing.Size(270, 25);
+            this.txtRetirada.Size = new System.Drawing.Size(359, 30);
             this.txtRetirada.TabIndex = 12;
             // 
             // txtNEA3
             // 
             this.txtNEA3.BackColor = System.Drawing.Color.Firebrick;
-            this.txtNEA3.Location = new System.Drawing.Point(233, 391);
-            this.txtNEA3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNEA3.Location = new System.Drawing.Point(311, 481);
+            this.txtNEA3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNEA3.Multiline = true;
             this.txtNEA3.Name = "txtNEA3";
-            this.txtNEA3.Size = new System.Drawing.Size(270, 25);
+            this.txtNEA3.Size = new System.Drawing.Size(359, 30);
             this.txtNEA3.TabIndex = 11;
             // 
             // txtAtaque3
             // 
             this.txtAtaque3.BackColor = System.Drawing.Color.Firebrick;
-            this.txtAtaque3.Location = new System.Drawing.Point(233, 353);
-            this.txtAtaque3.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAtaque3.Location = new System.Drawing.Point(311, 434);
+            this.txtAtaque3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAtaque3.Multiline = true;
             this.txtAtaque3.Name = "txtAtaque3";
-            this.txtAtaque3.Size = new System.Drawing.Size(270, 25);
+            this.txtAtaque3.Size = new System.Drawing.Size(359, 30);
             this.txtAtaque3.TabIndex = 10;
             // 
             // txtNEA2
             // 
             this.txtNEA2.BackColor = System.Drawing.Color.Firebrick;
-            this.txtNEA2.Location = new System.Drawing.Point(233, 315);
-            this.txtNEA2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNEA2.Location = new System.Drawing.Point(311, 388);
+            this.txtNEA2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNEA2.Multiline = true;
             this.txtNEA2.Name = "txtNEA2";
-            this.txtNEA2.Size = new System.Drawing.Size(270, 25);
+            this.txtNEA2.Size = new System.Drawing.Size(359, 30);
             this.txtNEA2.TabIndex = 9;
             // 
             // txtAtaque2
             // 
             this.txtAtaque2.BackColor = System.Drawing.Color.Firebrick;
-            this.txtAtaque2.Location = new System.Drawing.Point(233, 278);
-            this.txtAtaque2.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAtaque2.Location = new System.Drawing.Point(311, 342);
+            this.txtAtaque2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAtaque2.Multiline = true;
             this.txtAtaque2.Name = "txtAtaque2";
-            this.txtAtaque2.Size = new System.Drawing.Size(270, 25);
+            this.txtAtaque2.Size = new System.Drawing.Size(359, 30);
             this.txtAtaque2.TabIndex = 8;
             // 
             // txtNEA1
             // 
             this.txtNEA1.BackColor = System.Drawing.Color.Firebrick;
-            this.txtNEA1.Location = new System.Drawing.Point(233, 240);
-            this.txtNEA1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNEA1.Location = new System.Drawing.Point(311, 295);
+            this.txtNEA1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNEA1.Multiline = true;
             this.txtNEA1.Name = "txtNEA1";
-            this.txtNEA1.Size = new System.Drawing.Size(270, 25);
+            this.txtNEA1.Size = new System.Drawing.Size(359, 30);
             this.txtNEA1.TabIndex = 7;
             // 
             // txtAtaque1
             // 
             this.txtAtaque1.BackColor = System.Drawing.Color.Firebrick;
-            this.txtAtaque1.Location = new System.Drawing.Point(233, 202);
-            this.txtAtaque1.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAtaque1.Location = new System.Drawing.Point(311, 249);
+            this.txtAtaque1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAtaque1.Multiline = true;
             this.txtAtaque1.Name = "txtAtaque1";
-            this.txtAtaque1.Size = new System.Drawing.Size(270, 25);
+            this.txtAtaque1.Size = new System.Drawing.Size(359, 30);
             this.txtAtaque1.TabIndex = 6;
             // 
             // txtHabilidad
             // 
             this.txtHabilidad.BackColor = System.Drawing.Color.Firebrick;
-            this.txtHabilidad.Location = new System.Drawing.Point(233, 164);
-            this.txtHabilidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHabilidad.Location = new System.Drawing.Point(311, 202);
+            this.txtHabilidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHabilidad.Multiline = true;
             this.txtHabilidad.Name = "txtHabilidad";
-            this.txtHabilidad.Size = new System.Drawing.Size(270, 25);
+            this.txtHabilidad.Size = new System.Drawing.Size(359, 30);
             this.txtHabilidad.TabIndex = 5;
             // 
             // txtPS
             // 
             this.txtPS.BackColor = System.Drawing.Color.Firebrick;
-            this.txtPS.Location = new System.Drawing.Point(233, 130);
-            this.txtPS.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPS.Location = new System.Drawing.Point(311, 160);
+            this.txtPS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPS.Multiline = true;
             this.txtPS.Name = "txtPS";
-            this.txtPS.Size = new System.Drawing.Size(270, 25);
+            this.txtPS.Size = new System.Drawing.Size(359, 30);
             this.txtPS.TabIndex = 4;
             // 
             // txtTipo
             // 
             this.txtTipo.BackColor = System.Drawing.Color.Firebrick;
-            this.txtTipo.Location = new System.Drawing.Point(233, 96);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTipo.Location = new System.Drawing.Point(311, 118);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTipo.Multiline = true;
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(270, 25);
+            this.txtTipo.Size = new System.Drawing.Size(359, 30);
             this.txtTipo.TabIndex = 3;
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.Firebrick;
-            this.txtNombre.Location = new System.Drawing.Point(233, 58);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(311, 71);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(270, 25);
+            this.txtNombre.Size = new System.Drawing.Size(359, 30);
             this.txtNombre.TabIndex = 2;
             // 
             // txtCodigo
             // 
             this.txtCodigo.BackColor = System.Drawing.Color.Firebrick;
-            this.txtCodigo.Location = new System.Drawing.Point(233, 23);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Location = new System.Drawing.Point(311, 28);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(270, 25);
+            this.txtCodigo.Size = new System.Drawing.Size(359, 30);
             this.txtCodigo.TabIndex = 1;
             // 
             // label25
@@ -671,10 +671,9 @@
             this.label25.AutoSize = true;
             this.label25.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label25.Location = new System.Drawing.Point(519, 358);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Location = new System.Drawing.Point(692, 441);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(123, 20);
+            this.label25.Size = new System.Drawing.Size(154, 25);
             this.label25.TabIndex = 24;
             this.label25.Text = "Cartas en Chino";
             // 
@@ -683,10 +682,9 @@
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(519, 320);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Location = new System.Drawing.Point(692, 394);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(142, 20);
+            this.label24.Size = new System.Drawing.Size(177, 25);
             this.label24.TabIndex = 23;
             this.label24.Text = "Cartas en Koreano";
             // 
@@ -695,10 +693,9 @@
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label23.Location = new System.Drawing.Point(519, 283);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Location = new System.Drawing.Point(692, 348);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(138, 20);
+            this.label23.Size = new System.Drawing.Size(171, 25);
             this.label23.TabIndex = 22;
             this.label23.Text = "Cartas en japonés";
             // 
@@ -707,10 +704,9 @@
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label22.Location = new System.Drawing.Point(519, 245);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(692, 302);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(154, 20);
+            this.label22.Size = new System.Drawing.Size(189, 25);
             this.label22.TabIndex = 21;
             this.label22.Text = "Cartas en portugués";
             // 
@@ -719,10 +715,9 @@
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(519, 207);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Location = new System.Drawing.Point(692, 255);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(132, 20);
+            this.label21.Size = new System.Drawing.Size(163, 25);
             this.label21.TabIndex = 20;
             this.label21.Text = "Cartas en italiano";
             // 
@@ -731,10 +726,9 @@
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label20.Location = new System.Drawing.Point(519, 170);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(692, 209);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(134, 20);
+            this.label20.Size = new System.Drawing.Size(166, 25);
             this.label20.TabIndex = 19;
             this.label20.Text = "Cartas en alemán";
             // 
@@ -743,10 +737,9 @@
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(519, 135);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(692, 166);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(135, 20);
+            this.label19.Size = new System.Drawing.Size(166, 25);
             this.label19.TabIndex = 18;
             this.label19.Text = "Cartas en francés";
             // 
@@ -755,10 +748,9 @@
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label18.Location = new System.Drawing.Point(519, 101);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(692, 124);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(123, 20);
+            this.label18.Size = new System.Drawing.Size(153, 25);
             this.label18.TabIndex = 17;
             this.label18.Text = "Cartas en ingles";
             // 
@@ -767,10 +759,9 @@
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(519, 63);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(692, 78);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(138, 20);
+            this.label17.Size = new System.Drawing.Size(171, 25);
             this.label17.TabIndex = 16;
             this.label17.Text = "Cartas en español";
             // 
@@ -779,10 +770,9 @@
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label16.Location = new System.Drawing.Point(519, 27);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(692, 33);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(272, 20);
+            this.label16.Size = new System.Drawing.Size(334, 25);
             this.label16.TabIndex = 15;
             this.label16.Text = "Número de sobres donde encontrarlo";
             // 
@@ -791,10 +781,9 @@
             this.label15.AutoSize = true;
             this.label15.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(4, 545);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Location = new System.Drawing.Point(5, 671);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 20);
+            this.label15.Size = new System.Drawing.Size(56, 25);
             this.label15.TabIndex = 14;
             this.label15.Text = "Fase";
             // 
@@ -803,10 +792,9 @@
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(4, 509);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(5, 626);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 20);
+            this.label14.Size = new System.Drawing.Size(74, 25);
             this.label14.TabIndex = 13;
             this.label14.Text = "Rareza";
             // 
@@ -815,10 +803,9 @@
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(4, 471);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(5, 580);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(75, 20);
+            this.label13.Size = new System.Drawing.Size(93, 25);
             this.label13.TabIndex = 12;
             this.label13.Text = "Debilidad";
             // 
@@ -827,10 +814,9 @@
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(4, 434);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(5, 534);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 20);
+            this.label12.Size = new System.Drawing.Size(84, 25);
             this.label12.TabIndex = 11;
             this.label12.Text = "Retirada";
             // 
@@ -839,10 +825,9 @@
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(4, 396);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(5, 487);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(219, 20);
+            this.label11.Size = new System.Drawing.Size(269, 25);
             this.label11.TabIndex = 10;
             this.label11.Text = "Número de energías ataque 3";
             // 
@@ -851,10 +836,9 @@
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(4, 358);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(5, 441);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 20);
+            this.label10.Size = new System.Drawing.Size(91, 25);
             this.label10.TabIndex = 9;
             this.label10.Text = "Ataque 3";
             // 
@@ -863,10 +847,9 @@
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(4, 320);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(5, 394);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(219, 20);
+            this.label9.Size = new System.Drawing.Size(269, 25);
             this.label9.TabIndex = 8;
             this.label9.Text = "Número de energías ataque 2";
             // 
@@ -875,10 +858,9 @@
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(4, 283);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(5, 348);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 20);
+            this.label8.Size = new System.Drawing.Size(91, 25);
             this.label8.TabIndex = 7;
             this.label8.Text = "Ataque 2";
             // 
@@ -887,10 +869,9 @@
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(4, 245);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(5, 302);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(219, 20);
+            this.label7.Size = new System.Drawing.Size(269, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Número de energías ataque 1";
             // 
@@ -899,10 +880,9 @@
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(4, 207);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(5, 255);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 20);
+            this.label6.Size = new System.Drawing.Size(91, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Ataque 1";
             // 
@@ -911,10 +891,9 @@
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(4, 170);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(5, 209);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 20);
+            this.label5.Size = new System.Drawing.Size(93, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Habilidad";
             // 
@@ -923,10 +902,9 @@
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(4, 135);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(5, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 20);
+            this.label4.Size = new System.Drawing.Size(39, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "PS";
             // 
@@ -935,10 +913,9 @@
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(4, 101);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(5, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 20);
+            this.label3.Size = new System.Drawing.Size(51, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tipo";
             // 
@@ -947,10 +924,9 @@
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(4, 63);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(5, 78);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
@@ -959,27 +935,26 @@
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(4, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(5, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(75, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
             // 
-            // LaIslaSingular
+            // LuzTriunfal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1110, 586);
+            this.ClientSize = new System.Drawing.Size(1480, 721);
             this.Controls.Add(this.Registro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "LaIslaSingular";
+            this.Name = "LuzTriunfal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro Pokemon La Isla Singular";
+            this.Text = "Registro Pokemon Luz Triunfal";
             this.Registro.ResumeLayout(false);
             this.Registro.PerformLayout();
             this.ResumeLayout(false);

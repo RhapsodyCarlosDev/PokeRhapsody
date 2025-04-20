@@ -14,15 +14,21 @@ namespace Pokemon
        
         private void MostrarTotal()
         {
-            string connectionString = "Server=localhost;Database=pokerhapsody;Uid=root;Pwd=110818;";
+            string connectionString = "Server = SERVER; Database = DATABASE; Uid = USER ID; Pwd=PASSWORD;";
 
-            string query = "SELECT (SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM promos) +" +
-                                  "(SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM pokerhapsody.genes_formidables WHERE NOMBRE != 'Ambar Viejo') +" +
-                                  "(SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM la_isla_singular) AS Total";
+            string querytotal = "SELECT COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM promos), 0) +" +
+                                  "COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM pokerhapsody.genes_formidables WHERE NOMBRE != 'Ambar Viejo'), 0) +" +
+                                  "COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM la_isla_singular), 0) +" +
+                                  "COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM pugna_espacio_temporal), 0) +" +
+                                  "COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM luz_triunfal), 0) +" +
+                                  "COALESCE ((SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) FROM festival_brillante), 0) AS Total";
 
-            string query2 = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM promos";
-            string query3 = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM pokerhapsody.genes_formidables WHERE NOMBRE != 'Ambar Viejo'";
-            string query4 = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM la_isla_singular";
+            string querypromos = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM promos";
+            string querygenes = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM pokerhapsody.genes_formidables WHERE NOMBRE != 'Ambar Viejo'";
+            string queryisla = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM la_isla_singular";
+            string querypugna = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM pugna_espacio_temporal";
+            string queryluz = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM luz_triunfal";
+            string queryfestival = "SELECT SUM(ESP + ING + FRA + ALE + ITA + POR + JAP + KOR + CHI) AS Total FROM festival_brillante";
 
             using (MySqlConnection conexion = new MySqlConnection(connectionString))
             {
@@ -30,49 +36,82 @@ namespace Pokemon
                 {
                     conexion.Open();
 
-                    MySqlCommand cmd = new MySqlCommand(query, conexion);
-                    object result = cmd.ExecuteScalar();
+                    MySqlCommand cmdtotal = new MySqlCommand(querytotal, conexion);
+                    object resulttotal = cmdtotal.ExecuteScalar();
                     int total = 0;
 
-                    if (result != null && result != DBNull.Value)
+                    if (resulttotal != null && resulttotal != DBNull.Value)
                     {
-                        total = Convert.ToInt16(result);
+                        total = Convert.ToInt16(resulttotal);
                     }
 
                     lblTotal.Text = total.ToString();
 
-                    MySqlCommand cmd2 = new MySqlCommand(query2, conexion);
-                    object result2 = cmd2.ExecuteScalar();
-                    int total2 = 0;
+                    MySqlCommand cmdpromos = new MySqlCommand(querypromos, conexion);
+                    object resultpromos = cmdpromos.ExecuteScalar();
+                    int totalpromos = 0;
 
-                    if (result2 != null && result2 != DBNull.Value)
+                    if (resultpromos != null && resultpromos != DBNull.Value)
                     {
-                        total2 = Convert.ToInt16(result2);
+                        totalpromos = Convert.ToInt16(resultpromos);
                     }
 
-                    lblTotalP.Text = total2.ToString();
+                    lblTotalP.Text = totalpromos.ToString();
 
-                    MySqlCommand cmd3 = new MySqlCommand(query3, conexion);
-                    object result3 = cmd3.ExecuteScalar();
-                    int total3 = 0;
+                    MySqlCommand cmdgenes = new MySqlCommand(querygenes, conexion);
+                    object resultgenes = cmdgenes.ExecuteScalar();
+                    int totalgenes = 0;
 
-                    if (result3 != null && result3 != DBNull.Value)
+                    if (resultgenes != null && resultgenes != DBNull.Value)
                     {
-                        total3 = Convert.ToInt16(result3);
+                        totalgenes = Convert.ToInt16(resultgenes);
                     }
 
-                    lblTotalG.Text = total3.ToString();
+                    lblTotalG.Text = totalgenes.ToString();
 
-                    MySqlCommand cmd4 = new MySqlCommand(query4, conexion);
-                    object result4 = cmd4.ExecuteScalar();
-                    int total4 = 0;
+                    MySqlCommand cmdisla = new MySqlCommand(queryisla, conexion);
+                    object resultisla = cmdisla.ExecuteScalar();
+                    int totalisla = 0;
 
-                    if (result4 != null && result4 != DBNull.Value)
+                    if (resultisla != null && resultisla != DBNull.Value)
                     {
-                        total4 = Convert.ToInt16(result4);
+                        totalisla = Convert.ToInt16(resultisla);
                     }
 
-                    lblTotalL.Text = total4.ToString();
+                    lblTotalL.Text = totalisla.ToString();
+
+                    MySqlCommand cmdpugna = new MySqlCommand(querypugna, conexion);
+                    object resultpugna = cmdpugna.ExecuteScalar();
+                    int totalpugna = 0;
+
+                    if (resultpugna != null && resultpugna != DBNull.Value)
+                    {
+                        totalpugna = Convert.ToInt16(resultpugna);
+                    }
+
+                    lblTotalPET.Text = totalpugna.ToString();
+
+                    MySqlCommand cmdluz = new MySqlCommand(queryluz, conexion);
+                    object resultluz = cmdpugna.ExecuteScalar();
+                    int totalluz = 0;
+
+                    if (resultluz != null && resultluz != DBNull.Value)
+                    {
+                        totalluz = Convert.ToInt16(resultluz);
+                    }
+
+                    lblTotalLT.Text = totalluz.ToString();
+
+                    MySqlCommand cmdfestival = new MySqlCommand(queryfestival, conexion);
+                    object resultfestival = cmdfestival.ExecuteScalar();
+                    int totalfestival = 0;
+
+                    if (resultfestival != null && resultfestival != DBNull.Value)
+                    {
+                        totalfestival = Convert.ToInt16(resultfestival);
+                    }
+
+                    lblTotalFB.Text = totalfestival.ToString();
 
                 }
                 catch (Exception ex)

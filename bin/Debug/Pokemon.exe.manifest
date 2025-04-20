@@ -163,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pokemon.exe" size="844720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pokemon.exe" size="1123760">
       <assemblyIdentity name="Pokemon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zolj5O+hjM2XxcOtaczQb54UfDFvK1ex2ptcqpexS1g=</dsig:DigestValue>
+        <dsig:DigestValue>yo0Jv+B9lo/sl8YuTCsVwDF05+piL4Hnlvj+xx+P1pA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2494,6 +2494,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>fq0zMeq1VuTJ6MPZMWaRkMqwfSrwie/DVdklfB24QS8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Rhapsody\ISLA\ESP\001.jpeg" size="128920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RNWAmuONJC0Z40WTk1/7hWYDp49k3RnMe+w1q2rYu1k=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Rhapsody\PROMOS\ALE\001.jpeg" size="85301">

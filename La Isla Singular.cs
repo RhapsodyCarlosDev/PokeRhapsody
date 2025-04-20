@@ -496,16 +496,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ESP\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ESP\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -518,16 +515,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ING\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ING\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -540,16 +534,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\FRA\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\FRA\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -562,16 +553,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ALE\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ALE\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -584,16 +572,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ITA\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\ITA\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -606,16 +591,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\POR\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\POR\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -628,16 +610,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\JAP\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\JAP\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -650,16 +629,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\KOR\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\KOR\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else
@@ -672,16 +648,13 @@ namespace Pokemon
         {
             string Imagen = txtCodigo.Text.ToString();
 
-            // Crear una instancia del segundo formulario
             Pokedex cartas = new Pokedex();
 
-            // Pasa la imagen al Form2 en ESPAÑOL
-            cartas.MostrarImagen("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\CHI\\" + Imagen + ".jpeg");
+            cartas.MostrarImagen("C:FILES.JPEG");
 
-            if (File.Exists("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\Rhapsody\\ISLA\\CHI\\" + Imagen + ".jpeg"))
+            if (File.Exists("C:FILES.JPEG"))
 
             {
-                // Muestra el segundo formulario
                 cartas.Show();
             }
             else

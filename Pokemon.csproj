@@ -147,11 +147,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Festival Brillante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Festival Brillante.Designer.cs">
+      <DependentUpon>Festival Brillante.cs</DependentUpon>
+    </Compile>
     <Compile Include="La Isla Singular.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="La Isla Singular.Designer.cs">
       <DependentUpon>La Isla Singular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Luz Triunfal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Luz Triunfal.Designer.cs">
+      <DependentUpon>Luz Triunfal.cs</DependentUpon>
     </Compile>
     <Compile Include="Promos.cs">
       <SubType>Form</SubType>
@@ -180,6 +192,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pugna Espacio Temporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pugna Espacio Temporal.Designer.cs">
+      <DependentUpon>Pugna Espacio Temporal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Total.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,8 +210,14 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Festival Brillante.resx">
+      <DependentUpon>Festival Brillante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="La Isla Singular.resx">
       <DependentUpon>La Isla Singular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Luz Triunfal.resx">
+      <DependentUpon>Luz Triunfal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Promos.resx">
       <DependentUpon>Promos.cs</DependentUpon>
@@ -211,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Genes Formidables.resx">
       <DependentUpon>Genes Formidables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pugna Espacio Temporal.resx">
+      <DependentUpon>Pugna Espacio Temporal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Total.resx">
       <DependentUpon>Total.cs</DependentUpon>
@@ -240,16 +267,42 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Rhapsody\FESTIVAL\ALE\" />
+    <Folder Include="Rhapsody\FESTIVAL\CHI\" />
+    <Folder Include="Rhapsody\FESTIVAL\ESP\" />
+    <Folder Include="Rhapsody\FESTIVAL\FRA\" />
+    <Folder Include="Rhapsody\FESTIVAL\ING\" />
+    <Folder Include="Rhapsody\FESTIVAL\ITA\" />
+    <Folder Include="Rhapsody\FESTIVAL\JAP\" />
+    <Folder Include="Rhapsody\FESTIVAL\KOR\" />
+    <Folder Include="Rhapsody\FESTIVAL\POR\" />
     <Folder Include="Rhapsody\GENES\KOR\" />
     <Folder Include="Rhapsody\ISLA\ALE\" />
     <Folder Include="Rhapsody\ISLA\CHI\" />
-    <Folder Include="Rhapsody\ISLA\ESP\" />
     <Folder Include="Rhapsody\ISLA\FRA\" />
     <Folder Include="Rhapsody\ISLA\ING\" />
     <Folder Include="Rhapsody\ISLA\ITA\" />
     <Folder Include="Rhapsody\ISLA\JAP\" />
     <Folder Include="Rhapsody\ISLA\KOR\" />
     <Folder Include="Rhapsody\ISLA\POR\" />
+    <Folder Include="Rhapsody\LUZ\ALE\" />
+    <Folder Include="Rhapsody\LUZ\CHI\" />
+    <Folder Include="Rhapsody\LUZ\ESP\" />
+    <Folder Include="Rhapsody\LUZ\FRA\" />
+    <Folder Include="Rhapsody\LUZ\ING\" />
+    <Folder Include="Rhapsody\LUZ\ITA\" />
+    <Folder Include="Rhapsody\LUZ\JAP\" />
+    <Folder Include="Rhapsody\LUZ\KOR\" />
+    <Folder Include="Rhapsody\LUZ\POR\" />
+    <Folder Include="Rhapsody\PUGNA\ALE\" />
+    <Folder Include="Rhapsody\PUGNA\CHI\" />
+    <Folder Include="Rhapsody\PUGNA\ESP\" />
+    <Folder Include="Rhapsody\PUGNA\FRA\" />
+    <Folder Include="Rhapsody\PUGNA\ING\" />
+    <Folder Include="Rhapsody\PUGNA\ITA\" />
+    <Folder Include="Rhapsody\PUGNA\JAP\" />
+    <Folder Include="Rhapsody\PUGNA\KOR\" />
+    <Folder Include="Rhapsody\PUGNA\POR\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ICO\Cartas.ico" />
@@ -497,6 +550,7 @@
     <Content Include="ICO\Promos.ico" />
     <Content Include="Rhapsody\GENES\POR\064.jpeg" />
     <Content Include="Rhapsody\GENES\POR\160.jpeg" />
+    <Content Include="Rhapsody\ISLA\ESP\001.jpeg" />
     <Content Include="Rhapsody\PROMOS\ALE\001.jpeg" />
     <Content Include="Rhapsody\PROMOS\ALE\002.jpeg" />
     <Content Include="Rhapsody\PROMOS\CHI\001.jpeg" />

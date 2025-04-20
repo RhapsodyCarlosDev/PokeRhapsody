@@ -6,9 +6,9 @@ using System.Windows.Forms;
 
 namespace Pokemon
 {
-    public partial class GenesFormidables: Form
+    public partial class LuzTriunfal: Form
     {
-        public GenesFormidables()
+        public LuzTriunfal()
         {
             InitializeComponent();
         }
@@ -52,7 +52,7 @@ namespace Pokemon
                     koreano >= 0 && chino >= 0)
                 {
                     // Verificar si el código ya existe en la base de datos
-                    string checkSql = "SELECT COUNT(*) FROM genes_formidables WHERE Codigo = @Codigo";
+                    string checkSql = "SELECT COUNT(*) FROM luz_triunfal WHERE Codigo = @Codigo";
                     MySqlConnection conexion = Conexion.GetConexion();
                     conexion.Open();
 
@@ -67,7 +67,7 @@ namespace Pokemon
                     else
                     {
                         // Si el código no existe, realizamos la inserción
-                        string sql = "INSERT INTO genes_formidables (Codigo, Nombre, Tipo, PS, Habilidad, Ataque1, NEA1, Ataque2, NEA2, Ataque3, " +
+                        string sql = "INSERT INTO luz_triunfal (Codigo, Nombre, Tipo, PS, Habilidad, Ataque1, NEA1, Ataque2, NEA2, Ataque3, " +
                                      "NEA3, Retirada, Debilidad, Rareza, Fase, NSDE, ESP, ING, FRA, ALE, ITA, POR, JAP, KOR, CHI) " +
                                      "VALUES (@Codigo, @Nombre, @Tipo, @PS, @Habilidad, @Ataque1, @NEA1, @Ataque2, @NEA2, @Ataque3, " +
                                      "@NEA3, @Retirada, @Debilidad, @Rareza, @Fase, @NSDE, @Español, @Ingles, @Frances, @Aleman, @Italiano, " +
@@ -137,8 +137,8 @@ namespace Pokemon
             MySqlDataReader reader = null;
             MySqlDataReader reader2 = null;
 
-            string sql1 = "SELECT * FROM genes_formidables WHERE Codigo LIKE '" + codigo + "'";
-            string sql2 = "SELECT * FROM genes_formidables WHERE Nombre LIKE '" + nombre + "'";
+            string sql1 = "SELECT * FROM luz_triunfal WHERE Codigo LIKE '" + codigo + "'";
+            string sql2 = "SELECT * FROM luz_triunfal WHERE Nombre LIKE '" + nombre + "'";
 
             MySqlConnection conexioncodigo = Conexion.GetConexion();
             conexioncodigo.Open();
@@ -196,7 +196,7 @@ namespace Pokemon
                             txtKoreano.Text = reader.GetString(24);
                             txtChino.Text = reader.GetString(25);
                         }
-                                               
+
                     }
 
                     // Verificamos si se encontraron registros en la consulta de nombre
@@ -248,7 +248,7 @@ namespace Pokemon
                             }
                         }
 
-                        if(contadorNombre > 1)
+                        if (contadorNombre > 1)
                         {
                             Limpiar();
                             // Si se encontraron registros, mostramos un mensaje con los índices de los registros encontrados
@@ -316,7 +316,7 @@ namespace Pokemon
                 return; // Salimos si falta algún campo obligatorio
             }
 
-            string sql = "UPDATE genes_formidables SET Codigo = '" + codigo + "', Nombre = '" + nombre + "', Tipo = '" + tipo + "'," +
+            string sql = "UPDATE luz_triunfal SET Codigo = '" + codigo + "', Nombre = '" + nombre + "', Tipo = '" + tipo + "'," +
                 " PS = '" + ps + "', Habilidad = '" + habilidad + "', Ataque1 = '" + ataque1 + "', NEA1 = '" + nea1 + "'," +
                 " Ataque2 = '" + ataque2 + "', NEA2 = '" + nea2 + "', Ataque3 = '" + ataque3 + "', NEA3 = '" + nea3 + "'," +
                 " Retirada = '" + retirada + "', Debilidad = '" + debilidad + "', Rareza = '" + rareza + "', Fase = '" + fase + "'," +
@@ -374,7 +374,7 @@ namespace Pokemon
 
                     if (eliminar == DialogResult.Yes)
                     {
-                        string sqlEliminarCodigo = "DELETE FROM genes_formidables WHERE Codigo = @codigo";
+                        string sqlEliminarCodigo = "DELETE FROM luz_triunfal WHERE Codigo = @codigo";
                         MySqlCommand comandoEliminarCodigo = new MySqlCommand(sqlEliminarCodigo, conexion);
                         comandoEliminarCodigo.Parameters.AddWithValue("@codigo", codigo);
                         int registrosEliminadosCodigo = comandoEliminarCodigo.ExecuteNonQuery();
@@ -395,13 +395,13 @@ namespace Pokemon
                     {
                         txtCodigo.Focus(); // Si no se confirma la eliminación, se mantiene el enfoque en el campo de Nombre
                     }
-                
+
                 }
                 // Si solo se proporciona el Nombre, verificamos cuántos registros existen con ese nombre
                 else if (!string.IsNullOrEmpty(nombre))
                 {
                     // Contamos cuántos registros existen con el mismo Nombre
-                    string sqlContarNombre = "SELECT COUNT(*) FROM genes_formidables WHERE Nombre = @nombre";
+                    string sqlContarNombre = "SELECT COUNT(*) FROM luz_triunfal WHERE Nombre = @nombre";
                     MySqlCommand comandoContarNombre = new MySqlCommand(sqlContarNombre, conexion);
                     comandoContarNombre.Parameters.AddWithValue("@nombre", nombre);
                     int contadorNombre = Convert.ToInt32(comandoContarNombre.ExecuteScalar());
@@ -419,7 +419,7 @@ namespace Pokemon
 
                         if (eliminar == DialogResult.Yes)
                         {
-                            string sqlEliminarNombre = "DELETE FROM genes_formidables WHERE Nombre = @nombre";
+                            string sqlEliminarNombre = "DELETE FROM luz_triunfal WHERE Nombre = @nombre";
                             MySqlCommand comandoEliminarNombre = new MySqlCommand(sqlEliminarNombre, conexion);
                             comandoEliminarNombre.Parameters.AddWithValue("@nombre", nombre);
                             int registrosEliminadosNombre = comandoEliminarNombre.ExecuteNonQuery();
@@ -528,6 +528,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnFRA_Click(object sender, EventArgs e)
@@ -547,6 +548,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnALE_Click(object sender, EventArgs e)
@@ -566,6 +568,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnITA_Click(object sender, EventArgs e)
@@ -585,6 +588,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnPOR_Click(object sender, EventArgs e)
@@ -623,6 +627,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnKOR_Click(object sender, EventArgs e)
@@ -642,6 +647,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnCHI_Click(object sender, EventArgs e)
@@ -661,6 +667,7 @@ namespace Pokemon
             {
                 MessageBox.Show("Carta no conseguida");
             }
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -674,7 +681,7 @@ namespace Pokemon
             // Mostrar el Menu
             Menu.Show();
         }
-
+        
         private void btnSalir_Click(object sender, EventArgs e)
         {
             DialogResult r = MessageBox.Show("Estas seguro de salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -689,6 +696,5 @@ namespace Pokemon
                 txtCodigo.Focus();
             }
         }
-
     }
 }

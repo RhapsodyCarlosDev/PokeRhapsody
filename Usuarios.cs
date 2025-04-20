@@ -8,13 +8,13 @@ namespace Pokemon
     public partial class Usuarios: Form
     {
 
-        string connectionString = "Server = localhost; Database = PokeRhapsody; Uid = root; Pwd=110818;";
+        string connectionString = "Server = SERVER; Database = DATABASE; Uid = USER ID; Pwd=PASSWORD;";
 
         public Usuarios()
         {
             InitializeComponent();
             txtPassword.UseSystemPasswordChar = true;
-            Mostrar.Image = Image.FromFile("C:\\Users\\carloz3\\source\\repos\\Practicas Personales\\Pokemon\\Pokemon\\ICO\\Visible.ico");
+            Mostrar.Image = Image.FromFile("C:FILES");
         }
 
         private void btnIngresar_Click(object sender, System.EventArgs e)

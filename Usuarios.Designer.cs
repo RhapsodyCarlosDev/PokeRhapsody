@@ -48,10 +48,10 @@
             this.btnIngresar.BackColor = System.Drawing.Color.Gold;
             this.btnIngresar.ForeColor = System.Drawing.Color.Firebrick;
             this.btnIngresar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnIngresar.Location = new System.Drawing.Point(40, 115);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Location = new System.Drawing.Point(53, 142);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(83, 41);
+            this.btnIngresar.Size = new System.Drawing.Size(111, 50);
             this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -61,10 +61,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(72, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 26);
+            this.label1.Size = new System.Drawing.Size(112, 32);
             this.label1.TabIndex = 34;
             this.label1.Text = "Usuario";
             // 
@@ -73,10 +72,10 @@
             this.btnRegistro.BackColor = System.Drawing.Color.Gold;
             this.btnRegistro.ForeColor = System.Drawing.Color.Firebrick;
             this.btnRegistro.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnRegistro.Location = new System.Drawing.Point(169, 115);
-            this.btnRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistro.Location = new System.Drawing.Point(225, 142);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(83, 41);
+            this.btnRegistro.Size = new System.Drawing.Size(111, 50);
             this.btnRegistro.TabIndex = 4;
             this.btnRegistro.Text = "Registrar";
             this.btnRegistro.UseVisualStyleBackColor = false;
@@ -87,10 +86,10 @@
             this.BtnSalir.BackColor = System.Drawing.Color.Gold;
             this.BtnSalir.ForeColor = System.Drawing.Color.Firebrick;
             this.BtnSalir.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnSalir.Location = new System.Drawing.Point(296, 115);
-            this.BtnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnSalir.Location = new System.Drawing.Point(395, 142);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(83, 41);
+            this.BtnSalir.Size = new System.Drawing.Size(111, 50);
             this.BtnSalir.TabIndex = 5;
             this.BtnSalir.Text = "Salir";
             this.BtnSalir.UseVisualStyleBackColor = false;
@@ -99,19 +98,19 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(9, 63);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(12, 78);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(178, 32);
+            this.txtUsuario.Size = new System.Drawing.Size(236, 38);
             this.txtUsuario.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(169, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(225, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 54);
+            this.pictureBox1.Size = new System.Drawing.Size(84, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
@@ -120,30 +119,28 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(313, 174);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(417, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(119, 17);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Versión 1.0.0.5";
+            this.label3.Text = "Versión 1.0.0.6";
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(218, 63);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Location = new System.Drawing.Point(291, 78);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(178, 32);
+            this.txtPassword.Size = new System.Drawing.Size(236, 38);
             this.txtPassword.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(252, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(336, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 26);
+            this.label2.Size = new System.Drawing.Size(161, 32);
             this.label2.TabIndex = 43;
             this.label2.Text = "Contraseña";
             // 
@@ -151,10 +148,10 @@
             // 
             this.Mostrar.BackColor = System.Drawing.Color.White;
             this.Mostrar.Image = ((System.Drawing.Image)(resources.GetObject("Mostrar.Image")));
-            this.Mostrar.Location = new System.Drawing.Point(370, 63);
-            this.Mostrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Mostrar.Location = new System.Drawing.Point(493, 78);
+            this.Mostrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Mostrar.Name = "Mostrar";
-            this.Mostrar.Size = new System.Drawing.Size(26, 31);
+            this.Mostrar.Size = new System.Drawing.Size(35, 38);
             this.Mostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Mostrar.TabIndex = 44;
             this.Mostrar.TabStop = false;
@@ -163,11 +160,11 @@
             // 
             // Usuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(405, 190);
+            this.ClientSize = new System.Drawing.Size(540, 234);
             this.Controls.Add(this.Mostrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
@@ -179,7 +176,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

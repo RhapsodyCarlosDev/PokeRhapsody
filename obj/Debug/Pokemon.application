@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Pokemon.exe.manifest" size="125012">
+    <dependentAssembly dependencyType="install" codebase="Pokemon.exe.manifest" size="125419">
       <assemblyIdentity name="Pokemon.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wjTm0RlcKM2AFJ5K3UPFPcVHpi+ZHrHQywq8zQ/NorI=</dsig:DigestValue>
+        <dsig:DigestValue>A2yw4KefLYkwFva5YmMtAOGyZ52lplf3kv0vmQIbtD8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

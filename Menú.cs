@@ -8,7 +8,7 @@ namespace Pokemon
     public partial class Menú : Form
     {
 
-        string connectionString = "Server = localhost; Database = PokeRhapsody; Uid = root; Pwd=110818;";
+        string connectionString = "Server = SERVER; Database = DATABASE; Uid = USER ID; Pwd=PASSWORD;";
 
         public Menú()
         {
@@ -76,6 +76,33 @@ namespace Pokemon
                 LaIslaSingular laislasingular = new LaIslaSingular();
                 this.Hide();
                 laislasingular.Show();
+
+            }
+
+            else if (cbxExpansion.SelectedItem.ToString() == "Pugna Espacio Temporal")
+            {
+
+                PugnaEspacioTemporal pugnaespaciotemporal = new PugnaEspacioTemporal();
+                this.Hide();
+                pugnaespaciotemporal.Show();
+
+            }
+
+            else if (cbxExpansion.SelectedItem.ToString() == "Luz Triunfal")
+            {
+
+                LuzTriunfal luztriunfal = new LuzTriunfal();
+                this.Hide();
+                luztriunfal.Show();
+
+            }
+
+            else if (cbxExpansion.SelectedItem.ToString() == "Festival Brillante")
+            {
+
+                FestivalBrillante festivalbrillante = new FestivalBrillante();
+                this.Hide();
+                festivalbrillante.Show();
 
             }
 

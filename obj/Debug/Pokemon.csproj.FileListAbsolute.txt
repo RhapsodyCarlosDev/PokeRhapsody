@@ -58,3 +58,6 @@ C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pok
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Usuarios.resources
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.Total.resources
 C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.LaIslaSingular.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.PugnaEspacioTemporal.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.FestivalBrillante.resources
+C:\Users\carloz3\source\repos\Practicas Personales\Pokemon\Pokemon\obj\Debug\Pokemon.LuzTriunfal.resources
